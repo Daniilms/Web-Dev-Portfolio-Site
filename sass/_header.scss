@@ -1,0 +1,81 @@
+.header {
+  @extend %flex-between;
+  background-color: $dark-color;
+}
+.header-links {
+  @extend %flex-between;
+}
+.header-link {
+  margin: 0 0 0 23px;
+  padding: 13px 15px 14px 15px;
+  transition: all ease-in-out 0.3s;
+  &:hover {
+    background-color: $blue-color;
+    cursor: pointer;
+  }
+}
+.header-link:nth-child(2) {
+  position: relative;
+}
+.header-link-dropdown {
+  position: absolute;
+  top: 45px;
+  left: 0px;
+  white-space: nowrap;
+  opacity: 0;
+  z-index: -1;
+  padding: 10px 37px 13px 12px;
+  background-color: $blue-color;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.header-link-dropdown-visible {
+  opacity: 1;
+  z-index: 1;
+}
+.header-link-dropdown .header-link {
+  margin: 9px 0 0 0;
+  padding: 0 0 0 0;
+}
+.header-link-link {
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 13px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $white-color;
+}
+.header-profile {
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 13px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $white-color;
+}
+.header-extra {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.header-search {
+  margin: 0 0 0 34px;
+}
+.header-search-label {
+}
+.header-search-input {
+  border: none;
+  background-color: $dark-gray-color;
+  padding: 14px 0 12px 20px;
+}
+.header-search-input::placeholder {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0%;
+  opacity: 0.4;
+  color: $white-color;
+}

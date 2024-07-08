@@ -1,0 +1,46 @@
+.info-panel {
+  width: 300px;
+  height: 100vh;
+  background-color: #121212;
+  background-image: url("../img/info-background-image.png");
+  background-repeat: no-repeat;
+}
+
+.info-panel-user-name {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0%;
+  color: #d2d2d2;
+  margin: 19px 0 0 0;
+}
+
+.info-panel-user-topic-name {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 16px;
+  letter-spacing: 0%;
+  color: #dedede;
+  margin: 3px 0 0 0;
+}
+
+.info-panel-user-links {
+  margin: 20px 0 0 0;
+}
+
+.info-panel-text {
+  margin: 60px 0 0 0;
+}
+
+.info-panel-user-buttons {
+  margin: 60px 0 0 0;
+}
+
+.info-panel-user-button {
+  color: #ffffff;
+  border-radius: 25px;
+  box-shadow: 0px 7px 17px -10px rgba(242, 63, 63, 0.2);
+  padding: 13px 25px;
+}
+
+/*# sourceMappingURL=style.css.map */

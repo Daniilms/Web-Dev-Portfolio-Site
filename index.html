@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <script src="/script.js" defer></script>
+    <title>Blog</title>
+  </head>
+  <body class="body">
+    <aside class="info-panel">
+      <div class="info-panel-user">
+        <!-- <img class="info-panel-user-avatar" src="" alt="avatar" /> -->
+        <div class="info-panel-user-avatar"></div>
+        <h1 class="info-panel-user-name">Имя Фамилия</h1>
+        <h1 class="info-panel-user-topic-name">блог front-end разработчика</h1>
+        <div class="info-panel-user-links">
+          <a href="" class="info-panel-user-link"></a>
+          <a href="" class="info-panel-user-link"></a>
+          <a href="" class="info-panel-user-link"></a>
+        </div>
+      </div>
+      <div class="info-panel-text">
+        Front-end разработчик. Практик верстки сайтов.Созданием сайтов занимаюсь
+        с 2012 года. Работал в нескольких ИТ компаниях и наработал более 10 000
+        часов в создании сайтов различной сложности.
+      </div>
+      <div class="info-panel-user-buttons">
+        <button class="info-panel-user-button">Мои работы</button
+        ><button class="info-panel-user-button">Написать мне</button>
+      </div>
+    </aside>
+    <div class="main-content">
+      <header class="header">
+        <ul class="header-links">
+          <li class="header-link">
+            <a class="header-link-link" href="">главная</a>
+          </li>
+          <li class="header-link" id="dropdown-link">
+            <a class="header-link-link" href="">статьи</a>
+            <ul class="header-link-dropdown">
+              <li class="header-link">
+                <a class="header-link-link" href="">Создание сайтов</a>
+              </li>
+              <li class="header-link">
+                <a class="header-link-link" href="">Интернет-маркетинг</a>
+              </li>
+              <li class="header-link">
+                <a class="header-link-link" href="">Продвижение видео</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="header-link">
+            <a class="header-link-link" href="">обо мне</a>
+          </li>
+          <li class="header-link">
+            <a class="header-link-link" href="">реклама</a>
+          </li>
+        </ul>
+        <div class="header-extra">
+          <a href="#" class="header-profile">профиль</a>
+          <div class="header-search">
+            <label for="search" class="header-search-label"></label>
+            <input
+              id="search"
+              type="text"
+              class="header-search-input"
+              placeholder="Поиск по блогу"
+            />
+          </div>
+        </div>
+      </header>
+    </div>
+  </body>
+</html>

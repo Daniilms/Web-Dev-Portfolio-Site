@@ -1,0 +1,14 @@
+.info-panel-user-button {
+  white-space: nowrap;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0px 7px 17px -10px rgba(242, 63, 63, 0.2);
+  padding: 13px 25px;
+  color: $white-color;
+}
+.info-panel-user-button:first-child {
+  background-color: #ed3024;
+}
+.info-panel-user-button:last-child {
+  background-color: $blue-color;
+}

@@ -15,6 +15,9 @@ const infoPanel = document.querySelector(".info-panel");
 const infoPanelButton = document.querySelector(".info-panel-burger-button");
 const dropDownTitle = document.querySelector("#burger-content-dropdown-title");
 const dropDownList = document.querySelector("#burger-content-dropdown-list");
+const searchButton = document.querySelector(".header-extra-tablet-search");
+const headerSearchInput = document.querySelector(".header-search");
+const headerLinks = document.querySelector(".header-links");
 
 const posts = [
   {
@@ -47,7 +50,6 @@ const getCurrentDate = () => {
   const day = date.getDate() < 10 ? `0${date.getDate()}` : date.getDate();
   return `${day}.${month}.${year}`;
 };
-console.log(posts);
 
 const createBlogElement = (imgSrc, title, postText) => {
   const li = document.createElement("li");
@@ -123,3 +125,28 @@ const changeDropDownVisibility = () => {
   });
 };
 changeDropDownVisibility();
+
+const changeSearchInputVisibility = () => {
+  searchButton.addEventListener("click", (evt) => {
+    evt.stopPropagation();
+    headerLinks.classList.add("header-links-invisible");
+    searchButton.classList.add("header-extra-tablet-search-invisible");
+    headerSearchInput.classList.add("header-search-visible");
+  });
+};
+document.addEventListener("click", (evt) => {
+  if (
+    !evt.target.classList.contains("header-extra-tablet-search-svg") &&
+    !evt.target.classList.contains("header-extra-tablet-search") &&
+    !evt.target.classList.contains("header-search") &&
+    !evt.target.classList.contains("header-search-input")
+  ) {
+    console.log(evt.target);
+    headerSearchInput.classList.remove("header-search-visible");
+    setTimeout(() => {
+      headerLinks.classList.remove("header-links-invisible");
+      searchButton.classList.remove("header-extra-tablet-search-invisible");
+    }, 400);
+  }
+});
+changeSearchInputVisibility();

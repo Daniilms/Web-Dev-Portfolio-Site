@@ -160,6 +160,10 @@ p {
   max-height: 40px;
 }
 
+.header-links {
+  transition: all ease-in-out 0.4s;
+}
+
 .header-link {
   margin: 0 0 0 0;
   padding: 6px 15px 10px 14px;
@@ -241,6 +245,7 @@ p {
 .header-search {
   width: 100%;
   margin: 0 0 0 34px;
+  transition: all ease-in-out 0.4s;
 }
 
 .header-search-input {
@@ -248,6 +253,8 @@ p {
   border: none;
   background-color: #202020;
   padding: 14px 0 12px 20px;
+  transition: all ease-in-out 0.4s;
+  color: #ffffff;
 }
 
 .header-search-input::placeholder {
@@ -260,14 +267,37 @@ p {
 }
 
 @media (max-width: 869px) {
+  .header {
+    padding: 5px 0;
+  }
+  .header-search {
+    transform: translateX(300px);
+    width: 0;
+    padding: 0 2px 0 0;
+  }
+  .header-search-visible {
+    transform: translateX(-160px);
+    width: 70vw;
+  }
+  .header-search-input {
+    width: 100%;
+    padding: 14px 0 12px 20px;
+  }
   .header-links {
     margin-left: 50px;
+    opacity: 1;
+  }
+  .header-links-invisible {
+    opacity: 0;
   }
   .header-link {
     padding: 6px 10px 10px 10px;
   }
   .header-link-link {
     font-size: 9px;
+  }
+  .header-search {
+    margin: 0 20px 0 0;
   }
   .header-profile {
     display: none;
@@ -282,6 +312,11 @@ p {
   }
   .header-search {
     display: block;
+    padding: 0 2px 0 0;
+  }
+  .header-search-visible {
+    transform: translateX(0px);
+    width: 60vw;
   }
 }
 .hero {
@@ -731,7 +766,7 @@ p {
   padding: 5px 10px;
   background-color: transparent;
   color: #ffffff;
-  margin: 0 0 0 10px;
+  margin: 0 0 0 20px;
 }
 .header-aside-tablet-button:hover {
   cursor: pointer;
@@ -768,6 +803,35 @@ p {
   border-radius: 50%;
 }
 
+.header-extra-tablet-search {
+  opacity: 0;
+  border: none;
+  background-color: transparent;
+  padding: 5px 0 0 0;
+  transition: all ease-in-out 0.4s;
+}
+.header-extra-tablet-search:hover {
+  cursor: pointer;
+}
+
+.header-extra-tablet-search-svg {
+  width: 35px;
+  height: 34px;
+}
+
+.header-extra-tablet-search-svg path {
+  fill: #ffffff;
+  stroke: #ffffff;
+}
+
+.header-extra-tablet-search-svg circle {
+  stroke: #ffffff;
+}
+
+.header-extra-tablet-search-svg rect {
+  fill: none;
+}
+
 @media (max-width: 869px) {
   .info-panel-burger-button {
     display: block;
@@ -789,6 +853,12 @@ p {
   }
   .info-panel-user-button:last-child {
     margin: 10px 0 0 0px;
+  }
+  .header-extra-tablet-search {
+    opacity: 1;
+  }
+  .header-extra-tablet-search-invisible {
+    opacity: 0;
   }
 }
 @media (max-width: 399px) {

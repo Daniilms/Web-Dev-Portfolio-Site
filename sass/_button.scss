@@ -24,7 +24,7 @@
   padding: 5px 10px;
   background-color: transparent;
   color: $white-color;
-  margin: 0 0 0 10px;
+  margin: 0 0 0 20px;
   &:hover {
     cursor: pointer;
   }
@@ -59,6 +59,31 @@
   border-radius: 50%;
 }
 
+.header-extra-tablet-search {
+  opacity: 0;
+  border: none;
+  background-color: transparent;
+  padding: 5px 0 0 0;
+  transition: all ease-in-out 0.4s;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.header-extra-tablet-search-svg {
+  width: 35px;
+  height: 34px;
+}
+.header-extra-tablet-search-svg path {
+  fill: $white-color;
+  stroke: $white-color;
+}
+.header-extra-tablet-search-svg circle {
+  stroke: $white-color;
+}
+.header-extra-tablet-search-svg rect {
+  fill: none;
+}
 @media (max-width: $tablet) {
   .info-panel-burger-button {
     display: block;
@@ -66,6 +91,7 @@
   .header-aside-tablet-button {
     display: block;
   }
+
   .blog-search-button {
     padding: 9px 9px;
   }
@@ -80,6 +106,12 @@
   }
   .info-panel-user-button:last-child {
     margin: 10px 0 0 0px;
+  }
+  .header-extra-tablet-search {
+    opacity: 1;
+  }
+  .header-extra-tablet-search-invisible {
+    opacity: 0;
   }
 }
 @media (max-width: $mobile) {

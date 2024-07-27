@@ -1,13 +1,14 @@
 .header {
   @extend %flex-between;
   background-color: $dark-color;
+  max-height: 40px;
 }
 .header-links {
   @extend %flex-between;
 }
 .header-link {
-  margin: 0 0 0 23px;
-  padding: 13px 15px 14px 15px;
+  margin: 0 0 0 0;
+  padding: 6px 15px 10px 14px;
   transition: all ease-in-out 0.3s;
   &:hover {
     background-color: $blue-color;
@@ -19,12 +20,12 @@
 }
 .header-link-dropdown {
   position: absolute;
-  top: 45px;
+  top: 32px;
   left: 0px;
   white-space: nowrap;
   opacity: 0;
   z-index: -1;
-  padding: 10px 37px 13px 12px;
+  padding: 6px 37px 9px 12px;
   background-color: $blue-color;
   transition: all ease-in-out 0.3s;
   &:hover {
@@ -36,17 +37,28 @@
   z-index: 1;
 }
 .header-link-dropdown .header-link {
-  margin: 9px 0 0 0;
+  margin: 6px 0 0 0;
   padding: 0 0 0 0;
+}
+.header-link-dropdown .header-link-link {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0%;
+  text-transform: none;
 }
 .header-link-link {
   font-size: 11px;
   font-weight: 400;
   line-height: 13px;
   letter-spacing: 0%;
+  white-space: nowrap;
   text-transform: uppercase;
   text-decoration: none;
   color: $white-color;
+}
+.header-link-link-arrow {
+  margin: 0 0 2px 8.5px;
 }
 .header-profile {
   font-size: 11px;
@@ -55,19 +67,20 @@
   letter-spacing: 0%;
   text-transform: uppercase;
   text-decoration: none;
+  margin: 0 0 0 10px;
   color: $white-color;
 }
 .header-extra {
   display: flex;
   align-items: center;
-  height: 100%;
 }
 .header-search {
+  width: 100%;
   margin: 0 0 0 34px;
 }
-.header-search-label {
-}
+
 .header-search-input {
+  width: 90%;
   border: none;
   background-color: $dark-gray-color;
   padding: 14px 0 12px 20px;
@@ -79,4 +92,30 @@
   letter-spacing: 0%;
   opacity: 0.4;
   color: $white-color;
+}
+
+@media (max-width: $tablet) {
+  .header-links {
+    margin-left: 50px;
+  }
+  .header-link {
+    padding: 6px 10px 10px 10px;
+  }
+  .header-link-link {
+    font-size: 9px;
+  }
+  .header-profile {
+    display: none;
+  }
+}
+@media (max-width: $mobile) {
+  .header-links {
+    display: none;
+  }
+  .header-profile {
+    display: none;
+  }
+  .header-search {
+    display: block;
+  }
 }

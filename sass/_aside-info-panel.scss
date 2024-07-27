@@ -1,15 +1,19 @@
 .info-panel {
-  width: 400px;
+  width: 30%;
   height: 100vh;
   background-color: $dark-gray-color;
   background-image: url("../img/info-background-image.png");
   background-repeat: no-repeat;
-  background-size: 100% 15%;
+  background-size: 100% 190px;
   padding: 0 20px;
 }
 .info-panel-user {
   @extend %flex-center;
   padding: 130px 0 0 0;
+}
+.info-panel-user-links {
+}
+.info-panel-user-link {
 }
 .info-panel-user-avatar {
   width: 100px;
@@ -34,20 +38,58 @@
   margin: 3px 0 0 0;
 }
 .info-panel-user-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
   margin: 20px 0 0 0;
 }
 .info-panel-user-link {
+  margin: 0 0 0 10px;
+}
+.info-panel-user-link:first-child {
+  margin: 0 0 0 -10px;
+}
+.info-panel-decoration {
+  display: block;
+  background-color: $dark-color;
+  height: 1px;
+  margin: 28px 0 0 0;
 }
 .info-panel-text {
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
   letter-spacing: 0%;
-  margin: 60px 0 0 0;
+  margin: 30px 0 0 0;
+  text-align: center;
   color: $text-color;
 }
+
 .info-panel-user-buttons {
   display: flex;
   justify-content: space-between;
   margin: 60px 0 0 0;
+}
+@media (max-width: $tablet) {
+  .info-panel-user-buttons {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .info-panel-user-topic-name {
+    text-align: center;
+    margin: 10px 0 0 0;
+  }
+}
+@media (max-width: $tablet) {
+  .info-panel {
+    position: absolute;
+    width: 40%;
+    z-index: 1;
+    left: -500px;
+    transition: all ease-in-out 0.6s;
+  }
+  .info-panel-tablet-shown {
+    left: 0;
+  }
 }

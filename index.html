@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <script src="/script.js" defer></script>
+    <title>Blog</title>
+  </head>
+  <body class="body">
+   <div class="container">
+   <div class="blog-wrp">
+    <aside class="info-panel">
+      <button class="info-panel-burger-button">
+        <svg class="info-panel-burger-button-svg" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g opacity="0.4">
+          <path d="M13.9991 16.1602L10.0391 12.2002" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M13.96 12.2402L10 16.2002" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+          <path d="M10 6H14C16 6 16 5 16 4C16 2 15 2 14 2H10C9 2 8 2 8 4C8 6 9 6 10 6Z" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M16 4.02002C19.33 4.20002 21 5.43002 21 10V16C21 20 20 22 15 22H9C4 22 3 20 3 16V10C3 5.44002 4.67 4.20002 8 4.02002" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg></button>
+      <div class="info-panel-user">
+        <div class="info-panel-user-avatar"></div>
+        <h1 class="info-panel-user-name">Имя Фамилия</h1>
+        <p class="info-panel-user-topic-name">блог front-end разработчика</p>
+        <div class="info-panel-user-links">
+          <img src="./img/banned-link.svg" class="info-panel-user-link"></img>
+          <img src="./img/vk-link.svg" class="info-panel-user-link"></a>
+          <img src="./img/pinterest-link.svg" class="info-panel-user-link"></img>
+        </div>
+      </div>
+      <span class="info-panel-decoration"></span>
+      <p class="info-panel-text">
+        Front-end разработчик. Практик верстки<br />
+        сайтов.Созданием сайтов занимаюсь с 2012<br />
+        года. Работал в нескольких ИТ компаниях и<br />
+        наработал более 10 000 часов в создании<br />
+        сайтов различной сложности.
+      </p>
+      <div class="info-panel-user-buttons">
+        <button class="info-panel-user-button">Мои работы</button
+        ><button class="info-panel-user-button">Написать мне</button>
+      </div>
+    </aside>
+    <div class="main-content">
+      <header class="header">
+        <button class="header-aside-tablet-button">
+          ?
+        </button>
+        <div class="header-burger">
+          <div class="header-burger-lines">
+            <span class="header-burger-lines-line"></span>
+            <span class="header-burger-lines-line"></span>
+            <span class="header-burger-lines-line"></span>
+          </div>
+          <div class="header-burger-content">
+            <div class="header-burger-content-developer">
+              <div class="header-burger-content-developer-img"></div>
+              <div class="header-burger-content-developer-about">
+                <h1 class="header-burger-content-developer-about-name">Имя Фамилия</h1>
+                <p class="header-burger-content-developer-about-profession">блог front-end разработчика</p>
+              </div>
+              
+            </div>
+            <ul class="header-burger-content-navigation">
+              <li class="header-burger-content-navigation-title" id="burger-content-dropdown-title"><p class="header-burger-content-navigation-title-text">Статьи</p></li>
+              <ul class="header-burger-content-navigation-title-dropdown" id="burger-content-dropdown-list">
+                <li class="header-burger-content-navigation-title-dropdown-element">
+                  <a href="#" class="header-burger-content-navigation-title-dropdown-element-link">Создание сайтов</a>
+                </li>
+                <li class="header-burger-content-navigation-title-dropdown-element">
+                  <a href="#" class="header-burger-content-navigation-title-dropdown-element-link">Интернет-маркетинг</a>
+                </li>
+                <li class="header-burger-content-navigation-title-dropdown-element">
+                  <a href="#" class="header-burger-content-navigation-title-dropdown-element-link">Продвижение видео</a>
+                </li>
+              </ul>
+              <li class="header-burger-content-navigation-title"><p class="header-burger-content-navigation-title-text">Обо мне</p></li>
+              <li class="header-burger-content-navigation-title"><p class="header-burger-content-navigation-title-text">Реклама</p></li>
+              <li class="header-burger-content-navigation-title"><p class="header-burger-content-navigation-title-text">Профиль</p></li>
+            </ul>
+          </div>
+        </div>
+        <ul class="header-links">
+          <li class="header-link">
+            <a class="header-link-link" href="">главная</a>
+          </li>
+          <li class="header-link" id="dropdown-link">
+            <a class="header-link-link" href="#"
+              ><span class="header-link-link-text">статьи</span
+              ><img
+                class="header-link-link-arrow"
+                src="./img/header-dropdown-arrow.svg"
+                alt=""
+            /></a>
+            <ul class="header-link-dropdown">
+              <li class="header-link">
+                <a class="header-link-link" href="">Создание сайтов</a>
+              </li>
+              <li class="header-link">
+                <a class="header-link-link" href="">Интернет-маркетинг</a>
+              </li>
+              <li class="header-link">
+                <a class="header-link-link" href="">Продвижение видео</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="header-link">
+            <a class="header-link-link" href="">обо мне</a>
+          </li>
+          <li class="header-link">
+            <a class="header-link-link" href="">реклама</a>
+          </li>
+        </ul>
+        <div class="header-extra">
+          <button class="header-extra-tablet-search">
+            <svg class="header-extra-tablet-search-svg" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_15_152)">
+              <rect width="24" height="24" fill="white"/>
+              <circle cx="10.5" cy="10.5" r="6.5" stroke="#000000" stroke-linejoin="round"/>
+              <path d="M19.6464 20.3536C19.8417 20.5488 20.1583 20.5488 20.3536 20.3536C20.5488 20.1583 20.5488 19.8417 20.3536 19.6464L19.6464 20.3536ZM20.3536 19.6464L15.3536 14.6464L14.6464 15.3536L19.6464 20.3536L20.3536 19.6464Z" fill="#000000"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_15_152">
+              <rect width="24" height="24" fill="white"/>
+              </clipPath>
+              </defs>
+              </svg>
+          </button>
+          <a href="#" class="header-profile">профиль</a>
+          <div class="header-search">
+            <label for="search" class="header-search-label"></label>
+            <input
+              id="search"
+              type="text"
+              class="header-search-input"
+              placeholder="Поиск по блогу"
+            />
+          </div>
+        </div>
+      </header>
+      <div class="blog-container">
+        <section class="hero">
+          <ul class="hero-cards">
+            <li class="hero-card">
+              <h2 class="hero-card-title">Отдыхаю на природе</h2>
+              <p class="hero-card-date">21.09.2020</p>
+            </li>
+            <li class="hero-card">
+              <h2 class="hero-card-title">Заканчиваю сложный проект</h2>
+              <p class="hero-card-date">15.09.2020</p>
+            </li>
+            <li class="hero-card">
+              <h2 class="hero-card-title">Переехал в новую квартиру</h2>
+              <p class="hero-card-date">11.09.2020</p>
+            </li>
+            <li class="hero-card">
+              <h2 class="hero-card-title">Осень пришла!</h2>
+              <p class="hero-card-date">28.08.2020</p>
+            </li>
+          </ul>
+        </section>
+        <section class="blog-search">
+          <form class="blog-search-form">
+            <input id="blog-search-input" type="text" class="blog-search-input" placeholder="Напишите что-нибудь">
+            <input type="file" class="blog-search-button blog-search-input-file" id="photo-uploader"/>
+            <label for="" class="blog-search-input-label" >
+              <img src="./img/add-photo.svg" alt="add-photo">
+            </label>
+            <button class="blog-search-button blog-search-button-send"><img src="./img/send-post.svg" alt=""></button>
+            <label for="blog-search" class="blog-search-label"></label>
+          </form>
+        </section>
+        <section class="blog-feed">
+
+        </section>
+      </div>
+    </div>
+   </div>
+   </div>
+  </body>
+</html>

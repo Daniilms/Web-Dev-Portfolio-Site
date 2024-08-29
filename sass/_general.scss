@@ -1,0 +1,34 @@
+.body {
+  font-family: "Roboto", sans-serif;
+
+  @media (min-width: $min-width) {
+    background-color: #3e3e3e;
+  }
+}
+li {
+  list-style-type: none;
+}
+ul,
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 100vw;
+  @media (min-width: $min-width) {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
+.blog-wrp {
+  display: flex;
+}
+.main-content {
+  width: 100%;
+  background-color: $dark-background;
+}
+.blog-container {
+  padding: 0 50px 0 50px;
+}
